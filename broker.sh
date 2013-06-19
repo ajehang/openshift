@@ -1297,7 +1297,7 @@ set_defaults()
 
   # Where to find the OpenShift repositories; just the base part before
   # splitting out into Infrastructure/Node/etc.
-  repos_base_default='https://mirror.openshift.com/pub/origin-server/nightly/enterprise/2012-11-12'
+  repos_base_default='https://mirror.openshift.com/pub/origin-server/nightly/enterprise/2012-11-15'
   repos_base="${CONF_REPOS_BASE:-${repos_base_default}}"
 
   # The domain name for the OpenShift Enterprise installation.
@@ -1327,7 +1327,7 @@ set_defaults()
 
   # Grab the IP address set during installation.
   #cur_ip_addr="$(/sbin/ip addr show dev eth0 | awk '/inet / { split($2,a,"/"); print a[1]; }')"
-   cur_ip_addr=141.5.99.67
+   cur_ip_addr=141.5.99.13
   # Unless otherwise specified, the broker is assumed to be the current
   # host.
   broker_ip_addr="${CONF_BROKER_IP_ADDR:-$cur_ip_addr}"
